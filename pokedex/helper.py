@@ -34,5 +34,5 @@ def register_subscriber(wrapper: ConnectionWrapper, email):
     pattern = re.compile(r"(\w|[a-zA-Z0-9_])+@\w+\..+")
     if not pattern.match(email):
         ValueError("Invalid email!")
-    wrapper.register_subscriber(email)
     pass
+    wrapper.register_subscriber(email)
